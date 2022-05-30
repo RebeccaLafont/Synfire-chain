@@ -42,9 +42,9 @@ Wk=np.zeros((150,n_iterations))
  #not taking in any vairables ???
 Vi=np.zeros((in_number,n_iterations))-60 #potential for inhibatory neurons
 II=np.zeros((in_number, n_iterations)) #input to test V, V1, peaks = adapted_potential(weight)
-II[:,:]=30
-#for i in range(in_number):
-    #II[i,40*i:40*(i+1)]=35        #input for all neurons at different times)
+#II[:,:]=30
+for i in range(in_number):
+    II[i,100*i:100*(i+1)]=30        #input for all neurons at different times)
     
 Wie=np.zeros((30,150)) #weight matrix between I and E
 #excitatory
